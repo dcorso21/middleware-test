@@ -39,11 +39,9 @@ export default function middleware() {
     //   )
     // }
     try {
-        console.log("in middleware");
-
         const response = next();
 
-        response.headers.set("X-Set-Ex", "DENY");
+        response.headers.set("X-Example-Header", "Hello");
         // response.headers.set('X-Frame-Options', 'DENY')
         // response.headers.set('X-Content-Type-Options', 'nosniff')
         // response.headers.set('X-XSS-Protection', '1; mode=block')
