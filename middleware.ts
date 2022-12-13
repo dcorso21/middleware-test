@@ -39,6 +39,7 @@ export default function middleware() {
     //   )
     // }
     try {
+        console.log("in middleware");
         const response = next();
 
         response.headers.set("X-Example-Header", "Hello");
