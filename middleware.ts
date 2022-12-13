@@ -50,6 +50,7 @@ export default function middleware() {
 
         // const cspHeaderName = NODE_ENV === 'production' ? 'Content-Security-Policy' : 'Content-Security-Policy-Report-Only'
         // response.headers.set(cspHeaderName, NODE_ENV === 'production' ? compiledCsp : 'default-src self;')
+        console.log({ response });
         return response;
     } catch (e) {
         console.log(e);
